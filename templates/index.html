@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <title>Deepfake Detector</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>🔍 Deepfake Detector</h1>
-    <p>Upload an image or video to find out whether it's real or fake.</p>
-
+    <div class="icon">🔍</div>
+    <h1><i class="fa fa-bold">DEEPFAKE DETECTOR</i></h1>
+    <p>Upload an image or video to check if it's real or fake </p>
+    
     <form id="upload-form" method="POST" enctype="multipart/form-data">
       <label class="upload-btn">
-        Choose File
         <input type="file" name="file" id="file-input" required onchange="previewFile()">
-      </label>
+      </label><br>
       <button type="submit">Detect</button>
     </form>
-
     <!-- Preview Area -->
     <div id="preview-container"></div>
 
