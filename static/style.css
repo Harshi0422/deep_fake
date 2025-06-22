@@ -1,10 +1,10 @@
 body {
 main
   background-image: url("/static/image/background.jpg");
-  background-size: cover; /* Ensures the image covers the whole page */
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
