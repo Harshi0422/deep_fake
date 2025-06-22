@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About This Project</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body class="info-body">
+  <div class="info-fullscreen">
+    <nav><h1>ABOUT THIS PROJECT</h1></nav>
+    
+    <p class="intro-text">
+      This Deepfake Detector is designed to help you verify the authenticity of images and videos, ensuring they haven’t been manipulated using AI. It's fast, reliable, and user-friendly.
+    </p>
+
+    <h4>🔍 How it Works</h4>
+    <ul>
+      <li>Trained on thousands of real and deepfake media samples</li>
+      <li>Analyzes facial landmarks, inconsistencies, and noise patterns</li>
+      <li>Examines metadata and visual artifacts</li>
+      <li>Returns easy-to-understand results: <strong>Real</strong> or <strong>Fake</strong></li>
+    </ul>
+
+    <h3>🧠 Technology Stack</h3>
+    <ul>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Backend:</strong> Flask (Python)</li>
+      <li><strong>Machine Learning:</strong> TensorFlow, Keras</li>
+      <li><strong>Model Type:</strong> Convolutional Neural Networks (CNNs)</li>
+    </ul>
+
+    <h3>💡 Why This Matters</h3>
+    <p class="info-text">
+      With the rise of misinformation and synthetic media, it's becoming increasingly difficult to distinguish between real and fake content. This tool empowers users with the ability to verify content credibility and promote truth in digital media.
+    </p>
+
+    <h3>👥 Who Can Use It?</h3>
+    <ul>
+      <li>Journalists & Media Professionals</li>
+      <li>Educators & Researchers</li>
+      <li>Everyday Social Media Users</li>
+      <li>Fact-checkers & Law Enforcement</li>
+    </ul>
+
+    <h3>📬 Get in Touch</h3>
+    <p class="info-text">
+      For queries, suggestions, or collaborations, contact us at <a href="mailto:chennareddymonishreddy@gmail.com">deepfakedetector@domain.com</a>.
+    </p>
+
+    <center><a href="{{ url_for('index') }}" class="back-button">⬅ Back to Home</a></center>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deepfake Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🔍</div>
+    <h1>DEEPFAKE DETECTOR</h1>
+    <p>Upload an image or video to check if it's real or fake</p>
+
+    <!-- SINGLE FORM -->
+    <form id="upload-form" action="{{ url_for('detector') }}" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" id="file-input" required onchange="previewFile()"><br>
+      <button type="submit">Detect</button>
+    </form>
+
+    <div id="preview-container"></div>
+    <div id="loading-spinner" class="spinner hidden"></div>
+
+    {% if result %}
+    <div class="result-box {{ result|lower }}">
+      <h2>Result: {{ result }}</h2>
+    </div>
+    {% endif %}
+
+    <a href="{{ url_for('index') }}" class="back-button">Back to Home</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('upload-form');
+    const spinner = document.getElementById('loading-spinner');
+
+    form.addEventListener('submit', () => {
+      spinner.classList.remove('hidden');
+    });
+
+    function previewFile() {
+      const previewContainer = document.getElementById('preview-container');
+      previewContainer.innerHTML = '';
+      const file = document.getElementById('file-input').files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        if (file.type.startsWith('image')) {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.className = 'preview-image';
+          previewContainer.appendChild(img);
+        } else if (file.type.startsWith('video')) {
+          const video = document.createElement('video');
+          video.src = e.target.result;
+          video.controls = true;
+          video.className = 'preview-video';
+          previewContainer.appendChild(video);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>

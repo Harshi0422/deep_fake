@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result - Deepfake Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Detection Result</h1>
+    <div class="result-box {{ result|lower }}">
+      <h2>{{ result }}</h2>
+    </div>
+    <br>
+    <a href="{{ url_for('detector') }}"><button>Try Another</button></a>
+  </div>
+</body>
+</html>
