@@ -1,4 +1,5 @@
 body {
+main
   background-image: url("/static/image/background.jpg");
   background-size: cover; /* Ensures the image covers the whole page */
   background-position: center center; /* Centers the image */
@@ -8,12 +9,19 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+main
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   color: #fff;
   }
+main
 
 .top-nav {
   position: absolute;
@@ -41,6 +49,8 @@ body {
   background-color: #00bfff;
   transform: translateY(-2px);
 }
+
+ main
 
 .container {
   background: rgba(255, 255, 255, 0.1);
@@ -142,6 +152,7 @@ button:hover {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+main
 nav {
   background: rgba(255, 255, 255, 0.15);
   padding: 10px;
@@ -308,3 +319,5 @@ a:hover {
 }
 
 
+
+ main
