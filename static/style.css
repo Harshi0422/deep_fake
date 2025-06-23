@@ -1,5 +1,4 @@
 body {
-main
   background-image: url("/static/image/background.jpg");
   background-size: cover;
   background-position: center center;
@@ -8,20 +7,12 @@ main
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  
-
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-main
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   color: #fff;
-  }
-main
+}
 
 .top-nav {
   position: absolute;
@@ -50,7 +41,6 @@ main
   transform: translateY(-2px);
 }
 
- main
 
 .container {
   background: rgba(255, 255, 255, 0.1);
@@ -152,7 +142,7 @@ button:hover {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-main
+
 nav {
   background: rgba(255, 255, 255, 0.15);
   padding: 10px;
@@ -269,55 +259,8 @@ a:hover {
   align-items: center;
   text-align: center;
 }
-.bottom-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.bottom-nav a {
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.bottom-nav a:hover {
-  background-color: #00bfff;
-  color: #ffffff;
-  transform: translateY(-2px);
-}
-
-.bottom-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 38px;
-  left: 0;
-  gap: 40px;
-}
-.bottom-nav a {
-  margin: 0 10px;
-  color:	black; 
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-.bottom-nav a:hover {
-  color: #00bfff;
-}
+  
+ 
 
 
-
- main
+ 
